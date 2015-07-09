@@ -1,0 +1,10 @@
+C:\Users\Rushi\Documents\Visual Studio 2012\Projects\VirtualMaps\VirtualMaps\obj\x86\Debug\VirtualMaps.csprojResolveAssemblyReference.cache
+C:\Users\Rushi\Documents\Visual Studio 2012\Projects\VirtualMaps\VirtualMaps\obj\x86\Debug\App.g.cs
+C:\Users\Rushi\Documents\Visual Studio 2012\Projects\VirtualMaps\VirtualMaps\obj\x86\Debug\AllContacts.g.cs
+C:\Users\Rushi\Documents\Visual Studio 2012\Projects\VirtualMaps\VirtualMaps\obj\x86\Debug\Commands.g.cs
+C:\Users\Rushi\Documents\Visual Studio 2012\Projects\VirtualMaps\VirtualMaps\obj\x86\Debug\ContactInfo.g.cs
+C:\Users\Rushi\Documents\Visual Studio 2012\Projects\VirtualMaps\VirtualMaps\obj\x86\Debug\MainPage.g.cs
+C:\Users\Rushi\Documents\Visual Studio 2012\Projects\VirtualMaps\VirtualMaps\obj\x86\Debug\SavePhoneNumber.g.cs
+C:\Users\Rushi\Documents\Visual Studio 2012\Projects\VirtualMaps\VirtualMaps\obj\x86\Debug\VirtualMaps.g.resources
+C:\Users\Rushi\Documents\Visual Studio 2012\Projects\VirtualMaps\VirtualMaps\obj\x86\Debug\VirtualMaps.Resources.AppResources.resources
+C:\Users\Rushi\Documents\Visual Studio 2012\Projects\VirtualMaps\VirtualMaps\obj\x86\Debug\VirtualMaps.csproj.GenerateResource.Cache

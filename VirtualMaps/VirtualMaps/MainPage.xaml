@@ -1,0 +1,42 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:maps="clr-namespace:Microsoft.Phone.Maps.Controls;assembly=Microsoft.Phone.Maps"
+    x:Class="VirtualMaps.MainPage"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="False">
+    
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar Opacity="0.5"  IsMenuEnabled="True"  IsVisible="True" BackgroundColor="Gray">
+            <shell:ApplicationBarIconButton x:Name="saycmnd" IconUri="/Icons/microphone.png" Text="command" Click="saycmnd_Click"/>
+            
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem x:Name="gps" Text="get my location" Click="gps_Click"/>
+                <shell:ApplicationBarMenuItem x:Name="route" Text="find route" Click="route_Click"/>
+                <shell:ApplicationBarMenuItem x:Name="srch" Text="search" Click="srch_Click"/>
+                <shell:ApplicationBarMenuItem x:Name="saveanum" Text="save number" Click="saveanum_Click" />
+                <shell:ApplicationBarMenuItem x:Name="allcmnds" Text="commands" Click="allcmnds_Click"/>
+                
+            </shell:ApplicationBar.MenuItems>
+            
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <maps:Map x:Name="MyMaps" PedestrianFeaturesEnabled="True" LandmarksEnabled="True"/>
+        <TextBox x:Name="directions" HorizontalAlignment="Left" Height="72" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Visibility="Collapsed"/>
+        <TextBlock x:Name="name" Visibility="Collapsed"/>
+        <TextBlock x:Name="loc" Visibility="Collapsed"/>
+        
+        
+    </Grid>
+
+</phone:PhoneApplicationPage>

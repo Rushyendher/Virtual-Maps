@@ -1,0 +1,81 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="VirtualMaps.Commands"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="Virtual Maps" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="voice commands" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <ScrollViewer Height="auto">
+                <Grid Height="900">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid>
+                        <StackPanel x:Name="nav" Tap="nav_Tap">
+                            <TextBlock Text="Navigation." FontSize="45"/>
+                            <TextBlock Text="This command allows you to choose a place and navigate that place" FontSize="25" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <StackPanel x:Name="curloc" Tap="curloc_Tap">
+                            <TextBlock Text="Where am I?" FontSize="45" />
+                            <TextBlock Text="This command locates and gives you the current position of where you are" FontSize="25" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </Grid>
+                    <Grid Grid.Row="2">
+                        <StackPanel x:Name="modes" Tap="modes_Tap">
+                            <TextBlock Text="Change my map." FontSize="45"/>
+                            <TextBlock Text="This command allows you to change the mode of the map like hybrid, road, terrain" FontSize="25" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </Grid>
+                    <Grid Grid.Row="3">
+                        <StackPanel x:Name="srchplace" Tap="srchplace_Tap">
+                            <TextBlock Text="Search place." FontSize="45"/>
+                            <TextBlock Text="This command allows you to search for a place and gives the distance between the current position and searched place." FontSize="25" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </Grid>
+                    <Grid Grid.Row="4">
+                        <StackPanel x:Name="srchpeople" Tap="srchpeople_Tap">
+                            <TextBlock Text="Search people." FontSize="45"/>
+                            <TextBlock Text="This command allows you to show the applications lontact list people in map." FontSize="25" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </Grid>
+                    <Grid Grid.Row="5">
+                        <StackPanel x:Name="callnearby" Tap="callnearby_Tap">
+                            <TextBlock Text="Call nearby." FontSize="45"/>
+                            <TextBlock Text="This command allows you to call the near by person from your location." FontSize="25" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>
